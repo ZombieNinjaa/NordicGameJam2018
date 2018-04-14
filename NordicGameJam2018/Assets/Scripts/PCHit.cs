@@ -5,14 +5,18 @@ using UnityEngine;
 public class PCHit : MonoBehaviour {
     public static bool bl_PcHit;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void Update()
     {
-        Die();
+        if (bl_PcHit == true)
+        {
+            GameManager.Score -= 100;
+        }
     }
 
-    private void Die()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("PC Hit, Game Over");
         bl_PcHit = true;
     }
+
+   
 }

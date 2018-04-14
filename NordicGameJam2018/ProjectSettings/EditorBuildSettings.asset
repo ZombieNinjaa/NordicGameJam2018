@@ -6,5 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Testing Scene.unity
-    guid: e59af12276432204dbfc2c0802f7db1a
+    path: Assets/Scenes/Start Scene.unity
+    guid: 36ad693bc3c95f549b2674388c7c4348
+  - enabled: 1
+    path: Assets/Scenes/Level Select.unity
+    guid: 953c4586df954bb4097f75ed1d37f06d
+  - enabled: 1
+    path: Assets/Scenes/Rockets Tutorial.unity
+    guid: c783585e9e9ec894a8a3ec1494931189
+  - enabled: 1
+    path: Assets/Scenes/Wreckingball Tutorial.unity
+    guid: e6551845a85ce434fab21bbd771f4a2f
+  - enabled: 1
+    path: Assets/Scenes/Explosives Tutorial.unity
+    guid: 9742c1a84d029094984493f229c39873
+  - enabled: 1
+    path: Assets/Scenes/Other Buildings.unity
+    guid: f45f2dee5c273a24682325c34db4112c

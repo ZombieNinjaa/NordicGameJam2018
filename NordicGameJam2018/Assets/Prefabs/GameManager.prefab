@@ -52,9 +52,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tx_score: {fileID: 0}
-  fl_levelTimer: 12
+  fl_levelTimer: 8
+  go_PauseScreen: {fileID: 0}
   go_gameOverScreen: {fileID: 0}
   go_LevelOverScreen: {fileID: 0}
+  go_StartButtonPressed: {fileID: 0}
+  go_endscreen1star: {fileID: 0}
+  go_endscreen2stars: {fileID: 0}
+  go_endscreen3stars: {fileID: 0}
   go_WB: {fileID: 0}
   go_Rockets: {fileID: 0}
   go_Explosive: {fileID: 0}

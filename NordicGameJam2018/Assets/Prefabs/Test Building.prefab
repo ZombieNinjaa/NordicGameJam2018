@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 255459638014271806}
   m_Layer: 0
   m_Name: Square_Red (4)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 255885640732584750}
   m_Layer: 0
   m_Name: Square_Red (5)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 255152537714233156}
   m_Layer: 0
   m_Name: Square_Red (7)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 255531656449625914}
   m_Layer: 0
   m_Name: Square_Red (8)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 255159779203888440}
   m_Layer: 0
   m_Name: Square_Red (2)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 255514955449630024}
   m_Layer: 0
   m_Name: Brick
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 255223082304584196}
   m_Layer: 0
   m_Name: Square_Red (1)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 255561622393549876}
   m_Layer: 0
   m_Name: Square_Red (3)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 255711684558045080}
   m_Layer: 0
   m_Name: Square_Red
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,6 +239,23 @@ GameObject:
   - component: {fileID: 255116147729304420}
   m_Layer: 0
   m_Name: Triangle_Red
+  m_TagString: Brick
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1981061889497924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4119962726583312}
+  - component: {fileID: 61937503882227074}
+  - component: {fileID: 114540581973211288}
+  m_Layer: 0
+  m_Name: PointArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -257,6 +274,19 @@ Transform:
   m_Father: {fileID: 4306729807220850}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!4 &4119962726583312
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1981061889497924}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.566321, y: 1.4324167, z: 9.921495}
+  m_LocalScale: {x: 1.0366168, y: 1.0523233, z: 1.2565058}
+  m_Children: []
+  m_Father: {fileID: 4306729807220850}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4122335868285794
 Transform:
   m_ObjectHideFlags: 1
@@ -277,8 +307,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1206924477207756}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.09, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.21, y: -0.45, z: -7.9586}
+  m_LocalScale: {x: 0.79585785, y: 0.79585785, z: 0.79585785}
   m_Children:
   - {fileID: 4770587748872634}
   - {fileID: 4930729420117104}
@@ -291,6 +321,7 @@ Transform:
   - {fileID: 4729431316849332}
   - {fileID: 4382577810277796}
   - {fileID: 4098721380070078}
+  - {fileID: 4119962726583312}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -869,6 +900,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!61 &61937503882227074
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1981061889497924}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.18, y: 8.75}
+  m_EdgeRadius: 0
 --- !u!61 &61941026351613154
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -991,6 +1047,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _joint: {fileID: 255711684558045080}
+--- !u!114 &114540581973211288
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1981061889497924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a8cda6e2cd02c4c8d426e8f40366e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114542566121185616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1537,7 +1604,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 5.47, y: 5.33}
+  m_ConnectedAnchor: {x: 4.563342, y: 2.924437}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!255 &255152537714233156
@@ -1554,7 +1621,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 6.49, y: 0.96000004}
+  m_ConnectedAnchor: {x: 5.3751173, y: -0.5534615}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!255 &255159779203888440
@@ -1571,7 +1638,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 4.54, y: 3}
+  m_ConnectedAnchor: {x: 3.8231947, y: 1.0700884}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!255 &255223082304584196
@@ -1588,7 +1655,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 4.54, y: 0.96000004}
+  m_ConnectedAnchor: {x: 3.8231947, y: -0.5534615}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!255 &255459638014271806
@@ -1605,7 +1672,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 5.47, y: 0.96000004}
+  m_ConnectedAnchor: {x: 4.563342, y: -0.5534615}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!255 &255514955449630024
@@ -1622,7 +1689,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 6.52, y: -1.0199999}
+  m_ConnectedAnchor: {x: 5.398993, y: -2.12926}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!255 &255531656449625914
@@ -1639,7 +1706,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 6.46, y: 3}
+  m_ConnectedAnchor: {x: 5.3512416, y: 1.0700884}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!255 &255561622393549876
@@ -1656,7 +1723,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 5.53, y: -1.0199999}
+  m_ConnectedAnchor: {x: 4.611094, y: -2.12926}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!255 &255711684558045080
@@ -1673,7 +1740,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 4.54, y: -1.0199999}
+  m_ConnectedAnchor: {x: 3.8231947, y: -2.12926}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!255 &255885640732584750
@@ -1690,6 +1757,6 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 5.5, y: 3}
+  m_ConnectedAnchor: {x: 4.5872183, y: 1.0700884}
   m_DampingRatio: 0
   m_Frequency: 0
