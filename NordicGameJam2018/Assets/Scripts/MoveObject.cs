@@ -23,7 +23,7 @@ public class MoveObject : MonoBehaviour {
         {
             this.transform.position = Camera.main.ScreenToWorldPoint(temp);
         }
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonUp(0))
         {
             Raycast.st_selected = "";
             rotate = 0;
@@ -36,10 +36,10 @@ public class MoveObject : MonoBehaviour {
         {
             rb.constraints = RigidbodyConstraints2D.None;
         }
-        if ((Input.GetMouseButtonDown(0)) && (st_objectName == Raycast.st_selected))
+        if ((Input.GetMouseButtonDown(1)) && (st_objectName == Raycast.st_selected))
         {
             rotate += 1;
-            if (rotate > 1)
+            if ((rotate > 1) &&(st_objectName != "WreckingBall"))
             {
                 gameObject.transform.Rotate(0, 0, 45);
                 rotate += 1;

@@ -6,8 +6,14 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
 
     public static int in_gamestate;
+    public static int Score;
+    public Text tx_score;
+    public float fl_levelTimer;
 
-    private bool bl_WbSpawned;
+    public GameObject go_gameOverScreen;
+    public GameObject go_LevelOverScreen;
+    
+    public static bool bl_WbSpawned;
     public GameObject go_WB;
     private bool bl_RocketsSpawned;
     public GameObject go_Rockets;
@@ -17,7 +23,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         in_gamestate = 0;
-		
+        Score = 0;	
 	}
 	
 	// Update is called once per frame
@@ -31,8 +37,25 @@ public class GameManager : MonoBehaviour {
         {
             in_gamestate = 1;
         }
-		
+        if (in_gamestate == 1)
+        {
+            fl_levelTimer -= Time.deltaTime;
+        }
+        if (fl_levelTimer < 0 )
+        {
+            go_LevelOverScreen.SetActive(true);
+            in_gamestate = 0;
+        }
+        if (PCHit.bl_PcHit)
+        {
+            go_gameOverScreen.SetActive(true);
+            in_gamestate = 0;
+        }
+        tx_score.text = "Score: " + Score.ToString();
 	}
+
+
+    #region Buttons
     public void StartButton()
     {
         if (in_gamestate == 0)
@@ -78,4 +101,5 @@ public class GameManager : MonoBehaviour {
             }
         }
     }
+    #endregion
 }

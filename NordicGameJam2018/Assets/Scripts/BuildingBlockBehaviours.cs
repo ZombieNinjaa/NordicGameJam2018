@@ -36,6 +36,12 @@ public class BuildingBlockBehaviours : MonoBehaviour {
                 Debug.Log(_joint.connectedBody);
             }
         }
+
+        if (collision.transform.tag == "Buildings")
+        {
+            GameManager.Score -=1;
+            Debug.Log("Hit Building" + gameObject.name);
+        }
     }
     
 }
