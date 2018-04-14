@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
     public float fl_levelTimer;
     private bool bl_paused;
     public static int in_noOfStars;
+    private bool bl_doneScores;
 
     public GameObject go_PauseScreen;
     public GameObject go_gameOverScreen;
@@ -53,20 +54,26 @@ public class GameManager : MonoBehaviour {
         }
         if (fl_levelTimer < 0 )
         {
-            go_LevelOverScreen.SetActive(true);
-            in_gamestate = 0;
-            Scores();
-            if (in_noOfStars == 1)
+            if (!bl_doneScores)
             {
-                go_endscreen1star.SetActive(true);
-            }
-            if (in_noOfStars == 2)
-            {
-                go_endscreen2stars.SetActive(true);
-            }
-            if (in_noOfStars == 3)
-            {
-                go_endscreen3stars.SetActive(true);
+
+
+                go_LevelOverScreen.SetActive(true);
+                in_gamestate = 0;
+                Scores();
+                if (in_noOfStars == 1)
+                {
+                    go_endscreen1star.SetActive(true);
+                }
+                if (in_noOfStars == 2)
+                {
+                    go_endscreen2stars.SetActive(true);
+                }
+                if (in_noOfStars == 3)
+                {
+                    go_endscreen3stars.SetActive(true);
+                }
+                bl_doneScores = true;   
             }
         }
        
@@ -128,6 +135,11 @@ public class GameManager : MonoBehaviour {
         Scene _scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(_scene.name);
         Unpause();
+        bl_RocketsSpawned = false;
+        bl_WbSpawned = false;
+        bl_ExpSpawned = false;
+        Score = 0;
+        PCHit.bl_PcHit = false;
     }
 
     public void LevelSelectButton()

@@ -10,6 +10,8 @@ public class PCHit : MonoBehaviour {
         if (bl_PcHit == true)
         {
             GameManager.Score -= 100;
+            Debug.Log("Pc Hit");
+            bl_PcHit = false;
         }
     }
 
