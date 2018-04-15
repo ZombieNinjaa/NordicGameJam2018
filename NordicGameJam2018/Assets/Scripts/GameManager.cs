@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour {
     private bool bl_paused;
     public static int in_noOfStars;
     private bool bl_doneScores;
+    public AudioSource _audio;
 
     public GameObject go_PauseScreen;
     public GameObject go_gameOverScreen;
@@ -35,6 +36,7 @@ public class GameManager : MonoBehaviour {
         in_gamestate = 0;
         Score = 0;
         bl_paused = false;
+        _audio = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -140,50 +142,66 @@ public class GameManager : MonoBehaviour {
         bl_ExpSpawned = false;
         Score = 0;
         PCHit.bl_PcHit = false;
+        _audio.Play();
     }
 
     public void LevelSelectButton()
     {
+        _audio.Play();
         SceneManager.LoadScene("Level Select");   
     }
 
     public void WreckingBallTutSelectButton()
     {
+        _audio.Play();
         SceneManager.LoadScene("Wreckingball Tutorial");
     }
 
     public void RocketsTutSelectButton()
     {
+        _audio.Play();
         SceneManager.LoadScene("Rockets Tutorial");
     }
 
     public void ExplosivesTutSelectButton()
     {
+        _audio.Play();
         SceneManager.LoadScene("Explosives Tutorial");
     }
 
     public void OtherBuildingsSelectTutButton()
     {
+        _audio.Play();
         SceneManager.LoadScene("Other Buildings");
+    }
+
+    public void MoreBuildingsSelectButton()
+    {
+        _audio.Play();
+        SceneManager.LoadScene("Level5");
     }
 
     public void MainMenuButton()
     {
+        _audio.Play();
         SceneManager.LoadScene("Start Scene");
     }
 
     public void QuitButton()
     {
+        _audio.Play();
         Application.Quit();
     }
 
     public void ReturnButton()
     {
+        _audio.Play();
         Unpause();
     }
 
     public void StartButton()
     {
+        _audio.Play();
         if (in_gamestate == 0)
         {
             in_gamestate = 1;
@@ -194,6 +212,7 @@ public class GameManager : MonoBehaviour {
 
     public void WBButton()
     {
+        _audio.Play();
         if (in_gamestate == 0)
         {
             if (!bl_WbSpawned)
@@ -207,6 +226,7 @@ public class GameManager : MonoBehaviour {
 
     public void RocketsButton()
     {
+        _audio.Play();
         if (in_gamestate == 0)
         {
             if (!bl_RocketsSpawned)
@@ -219,6 +239,7 @@ public class GameManager : MonoBehaviour {
 
     public void ExplosivesButton()
     {
+        _audio.Play();
         if (in_gamestate == 0)
         {
             if (!bl_ExpSpawned)
