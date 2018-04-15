@@ -187,6 +187,12 @@ public class GameManager : MonoBehaviour {
         SceneManager.LoadScene("Start Scene");
     }
 
+    public void CreditsButton()
+    {
+        _audio.Play();
+        SceneManager.LoadScene("Credits");
+    }
+
     public void QuitButton()
     {
         _audio.Play();
